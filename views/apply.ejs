@@ -1,0 +1,88 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand ml-2" href="#">HireHub</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/careers">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/dashboard">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/users/logout">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <body>
+    <div class="container py-4">
+        <h1 class="mb-4">Apply</h1>
+
+        <section>
+            <div class="container">
+              <div class="jumbotron" style="background-image: url('https://fc05.deviantart.net/fs39/f/2008/340/3/9/Black_Tech_by_monkeymagico.png'); background-size: cover; background-position: center; height: 400px; position: relative;">
+                <div class="row h-100">
+                  <div class="col-md-6 offset-md-5 d-flex flex-column justify-content-center align-items-end">
+                    <h6 class="display-6 text-white">Terms and Conditions</h6>
+                    <p class="lead text-white">By submitting your application and uploading your resume, you agree to provide accurate and truthful information. Any false or misleading information may result in disqualification from consideration.
+
+                        We respect your privacy and will handle your personal information with utmost care. The information provided in your application will be used solely for the purpose of evaluating your suitability for employment. We will not disclose your personal information to third parties without your consent, unless required by law.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <section>
+        <div class="card text-center">
+            <div class="card-body">
+                <form action="/apply" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="resume">Upload Resume (PDF)</label>
+                        <input type="file" class="form-control-file" id="resume" name="resume" accept=".pdf" required>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary mt-3 mb-2">Submit</button>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="container">
+                      <div class="jumbotron" style="background-image: url('https://t4.ftcdn.net/jpg/02/07/15/43/360_F_207154340_wLIJus4m3SBl5sAQmpqN3Um7REnUhskU.jpg'); background-size: cover; background-position: center; height: 400px; position: relative;">
+                        <div class="row h-100">
+                          <div class="col-md-6 offset-md-1 d-flex flex-column justify-content-center align-items">
+                            <h6 class="display-6 text-white">Disclaimer</h6>
+                            <p class="lead text-white">We reserve the right to modify or update these terms and conditions at any time without prior notice. It is your responsibility to review the terms and conditions periodically for any changes.
+
+                                By proceeding with the application submission, you acknowledge that you have read, understood, and agree to abide by these terms and conditions.
+                                
+                                If you have any questions or concerns regarding these terms and conditions, please contact us for clarification before proceeding with your application.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+  
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <span class="text-black">© 2023 HireHub. All rights reserved.</span>
+    </div>
+  </footer>
